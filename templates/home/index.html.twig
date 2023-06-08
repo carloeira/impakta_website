@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block title %} {{ titulo }} {% endblock %}
+
+{% block body %}
+<h1> {{ titulo }} </h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse laboriosam at facere aliquid libero totam necessitatibus, sequi nulla quisquam, aspernatur laborum numquam quam iusto voluptatum incidunt eveniet voluptates enim autem!</p>
+<p>Percorrendo Arrays</p>
+<ul>
+    {% for curso in cursos %}
+    <li>{{ curso }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,5 +1,12 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+index:
+   path: /
+   controller: App\Controller\HomeController::index
+
+excel:
+    path: /excel
+    controller: App\Controller\ExcelController::excel
+
+helloname:
+    path: /helloname/{name}
+    controller: App\Controller\ExcelController::helloname
+
